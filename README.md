@@ -1,4 +1,4 @@
-Data Structures Course<br/>Santiago Baldrich
+Data Structures Course<br/><h3>Santiago Baldrich</h3>
 =======
 
 Code from the 2014 - I Data Structures Course @ Universidad Nacional de Colombia
