@@ -14,3 +14,6 @@ Code from the 2014 - I Data Structures Course @ Universidad Nacional de Colombia
 18-Mar: Quick recap and Java Generics. Gotta cath 'em all.
 
 20-Mar: Bounded type parameters. ArrayLinearList Data Structure (1)
+
+25-Mar: ArrayLinearList Data Structure (2). Interable Interface.
+
