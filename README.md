@@ -17,3 +17,4 @@ Code from the 2014 - I Data Structures Course @ Universidad Nacional de Colombia
 
 25-Mar: ArrayLinearList Data Structure (2). Interable Interface.
 
+27-Mar: ArrayLinearList Data Structure (3). ArrayLinearListImproved, sorting.
