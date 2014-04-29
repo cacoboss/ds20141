@@ -67,6 +67,24 @@ public class ArrayLinearList<T> implements LinearList<T>,
 		element[ --size ] = null;
 		return removed;
 	}
+	
+	// The annotation is necessary :)
+	@SuppressWarnings("unchecked")
+	public void merge( ArrayLinearList< T > other ){
+		/* The size of the new list may be bigger
+		 * than twice the length of this list. 
+		 * Increase the capacity accordingly to ensure it is enough.
+		 */
+		// What is the complexity of this operation? 
+		// how can we improve its performance?
+		while( this.size + other.size > element.length ){
+			T[] old = element;
+			element = (T[]) new Object[ 2*element.length ];
+			System.arraycopy( old, 0, element, 0, size );
+		}
+		System.arraycopy( other.element, 0, element, size, other.size );
+		size += other.size;
+	}
 
 	@Override
 	public String toString(){
@@ -108,24 +126,5 @@ public class ArrayLinearList<T> implements LinearList<T>,
 		} 
 	}
 	
-
-	
-	// The annotation is necessary :)
-	@SuppressWarnings("unchecked")
-	public void merge( ArrayLinearList< T > other ){
-		/* The size of the new list may be bigger
-		 * than twice the length of this list. 
-		 * Increase the capacity accordingly to ensure it is enough.
-		 */
-		while( this.size + other.size > element.length ){
-			T[] old = element;
-			element = (T[]) new Object[ 2*element.length ];
-			System.arraycopy( old, 0, element, 0, size );
-		}
-		for( int i=size, j=0; j<other.size; i++, j++ ){
-			element[i] = other.element[j];
-			size++;
-		}
-	}
 }
 
