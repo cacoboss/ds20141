@@ -20,3 +20,5 @@ Code from the 2014 - I Data Structures Course @ Universidad Nacional de Colombia
 27-Mar: ArrayLinearList Data Structure (3). ArrayLinearListImproved, sorting.
 
 03-Apr: Linked List Data Structure.
+
+24-Apr: Stack data structure. Derived implementation ( and its problems) 
